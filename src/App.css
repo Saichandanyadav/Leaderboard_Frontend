@@ -126,9 +126,55 @@ input[type="number"] {
 @media (max-width: 768px) {
     .navbar {
         flex-direction: column;
+        align-items: flex-start; /* Align items to the left */
     }
     
+    .navbar a {
+        padding: 8px 12px;
+        width: 100%; /* Make links full width */
+        text-align: left; /* Align text to the left */
+    }
+
     .container {
         padding: 10px;
+        width: 90%; /* Make the container narrower on small screens */
+        margin: 10px auto; /* Reduce margin */
+    }
+
+    .leaderboard,
+    .claim-history {
+        font-size: 14px; /* Adjust font size */
+    }
+
+    button {
+        width: 100%; /* Make buttons full width */
+    }
+
+    /* Adjust input field size */
+    input[type="text"],
+    input[type="email"],
+    input[type="number"] {
+        width: 100%; /* Make input fields full width */
+    }
+}
+
+/* Extra small devices (phones, less than 576px) */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px; /* Smaller base font size */
+    }
+
+    .mobile-view {
+        background-size: cover;
+        min-height: 100vh;
+        width: 100%;
+    }
+
+    .container {
+        padding: 8px;
+    }
+
+    .navbar a {
+        font-size: 14px; /* Smaller font size for navbar links */
     }
 }

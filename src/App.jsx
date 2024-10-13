@@ -8,7 +8,8 @@ import './App.css'
 
 function App() {
   return (
-    <Router>
+    <div className='mobile-view'>
+      <Router>
       <Navbar />
       <Routes>
         <Route path="/" element={<Leaderboard />} />
@@ -17,6 +18,7 @@ function App() {
         <Route path="/user-form" element={<UserForm />} />
       </Routes>
     </Router>
+    </div>
   );
 }
 
