@@ -1,0 +1,17 @@
+.claim-points {
+    margin: 20px auto;
+    width: 50%;
+    text-align: center;
+  }
+  
+  select, button {
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  button {
+    background-color: #333;
+    color: white;
+    border: none;
+  }
+  
